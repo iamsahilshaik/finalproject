@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+   {% block  body_block  %}
+
+   <a href="/list"><button type="button" class="btn btn-primary navbar-btn">Home</button></a>
+
+<ul><h4>SALADS</h4></ul>
+
+   <table>
+     <p><<strong>CARROT SALAD</strong>    : Rs.140/-</p>
+     <p><strong>AVOCADO SALAD</strong>    : Rs.180/-</p>
+     <p><strong>MIXED SALAD</strong>      : Rs.200/-</p>
+     <p><strong>CUCUMBER SALAD</strong>   : Rs.240/-</p>
+   </table>
+
+   <a href="/register"><button type="button" class="btn btn-danger navbar-btn">Buy Now</button></a>
+
+
+   {%  endblock  %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/final.css"%}">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-danger navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">MEET MY FOOD</a>
+    </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">iNTRODUCTION <span class="sr-only">(current)</span></a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/location">Location</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/register">Register</a></li>
+
+      </ul>
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<a href="/table"><button type="button" class="btn btn-success navbar-btn">Book Your Table</button></a>
+
+{% block  body_block  %}
+
+{%  endblock  %}
+
+  </body>
+</html>
